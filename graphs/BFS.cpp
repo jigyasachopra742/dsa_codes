@@ -19,7 +19,7 @@ class Solution {
         {
             if(!visited[idx])
             {
-                queue<int> q;
+                queue<int>q;
                 q.push(idx); //push the src node in queue that is 0 is pushed first
                 //jaise hi queue mai src node pysh gua voh vase hi mark ho gaya taaki vapis se usko use na kar sake
                 visited[idx] = true;
