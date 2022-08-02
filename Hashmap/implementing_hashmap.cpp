@@ -1,5 +1,10 @@
 //puri linked lists MapNode type ki hai
-
+//ek bucket aaray bana rahe hai
+//usmai different indexes pe key store kar rahe hai
+//ek hashing function lete hai which consists of hashcode and compression function which compresses the large index acc to the bucket array size
+//supposr string hashing se jaake hashcode generate kar dia 10593 , then we will compress it to fit in bucket array
+//hashcode = hashcode % bucketarray size
+//voh us index ko us range mai le aayega
 #include <iostream>
 using namespace std;
 
