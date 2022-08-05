@@ -8,7 +8,9 @@ using namespace std;
 //AGAR 3 THEN 3D DP
 
 //t(c) : k times loop chalra k steps for every junction (O(N) * K)
-//s(c) : o(N) + o(N) //recursion stack + memorization
+//s(c) : O(N) + O(N) //recursion stack + memorization
+
+//tabulation mai s(c) : O(N) jo jaayegi kyunki recursion stack nahi banra, recursive calls nahi kar rahe
 
 //DP IS OPTIMIZED RECURSION!!!!!
     //JUST KNOW HOW TO MAKE THE CALLS AND COUNT ALL WAYS POSSIBLE
