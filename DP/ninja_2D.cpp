@@ -26,10 +26,11 @@ int solve(int curr_day, int last_task, vector<vector<int>> &points, vector<vecto
     int maxi = 0; //for next days
     for(int task = 0; task < 3; task++)
     {
-        if(task != last_task)
+        if(task != last_task) //last task should not be equal to curr task
         {
             int point = points[curr_day][task] + solve(curr_day - 1, task, points, dp);
-            
+            //picking that day with that task and going to prev day with that task so that the prev
+            //task does not take the similar consecutive task
             maxi = max(maxi, point);
         }
     }
