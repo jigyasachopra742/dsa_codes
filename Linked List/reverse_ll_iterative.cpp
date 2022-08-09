@@ -50,9 +50,8 @@ public:
     node* temp = head;
     if (head == NULL) {
       cout << "0" << endl;
-      return;
-    }
-    while (temp != NULL) {
+      return;    
+      while (temp != NULL) {
       cout << temp->val << " ";
       temp = temp->next;
     }

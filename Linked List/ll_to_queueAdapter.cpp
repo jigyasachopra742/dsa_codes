@@ -6,8 +6,6 @@ class node {
 public:
   int val;
   node* next;
-
-
 };
 
 class LinkedList {
