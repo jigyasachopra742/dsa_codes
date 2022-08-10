@@ -132,7 +132,7 @@ public:
     temp->next = newnode;
   }
 
-  void removeAt(int pos) 
+  void removeAt(int pos)  //yaha dekh
   {
      if(pos == 0)
      {
