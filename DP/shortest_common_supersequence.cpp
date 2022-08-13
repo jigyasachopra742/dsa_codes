@@ -4,7 +4,7 @@
 //common LCS : GTAB
 
 //a + b - LCS = AGGTAB + GXTXAYB(GTAB) - GTAB
-//STRING : AGGXTXAYB = 9 return it
+//STRING : AGGXTXAYB = 9 return it //1 hi baar aana chahiye 
 //worst case of SCS : a + b
 //best case : take LCS
 class Solution
