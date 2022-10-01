@@ -26,10 +26,27 @@ bool f(int idx, int k, vector<int> &arr, vector<vector<int>> &dp)
     return dp[idx][k] = not_take | take; //if either of them returns true , the return it
 }
 
-bool subsetSumToK(int n, int k, vector<int> &arr) 
+
+bool canPartition(vector<int> &arr, int n)
 {
-    vector<vector<int>> dp(n + 1, vector<int>(k + 1, -1));
-    //initializing the dp array with -1
-    return f(n - 1, k, arr, dp);
-    // Write your code here.
+    int tot_sum = 0;
+    int target;
+    for(int idx = 0; idx < arr.size(); idx++)
+    {
+        tot_sum+= arr[idx];
+    }
+    
+    if(tot_sum % 2 != 0) //if odd no partition
+    {
+        return false;
+    }
+    
+    if(tot_sum % 2 == 0) //if even
+    {
+        target = tot_sum / 2; //we got s1
+    }
+    
+    vector<vector<int>> dp(n + 1, vector<int> (target + 1, -1));
+     return f(n - 1, target, arr, dp);
+// Write your code here.
 }
