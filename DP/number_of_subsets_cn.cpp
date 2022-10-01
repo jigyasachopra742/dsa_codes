@@ -3,12 +3,13 @@ using namespace std;
 
 int helper(int idx, vector<int> &num, int sum, vector<vector<int>> &dp)
     {
-        if(sum == 0) return 1; //arr ke elements hi nah lo
-        
+     
         if(idx == 0)
         {
-            return (num[0] == sum); //return true if and only if element at arr[0] is 
-            //equal to target because there is only 1 element in array now
+           if(sum == 0 && num[0] == 0) return 2;
+           if(sum == 0 || sum == num[0]) return 1;
+            
+           return 0;
         }
         
         if(dp[idx][sum] != -1) //if already evaluated
