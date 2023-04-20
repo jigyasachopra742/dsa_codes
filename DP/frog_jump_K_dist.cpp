@@ -22,7 +22,7 @@ using namespace std;
     //agar 3 states change hongi, tou 3D DP banegi
  
 int frog(int index, vector<int> &heights, vector<int> &dp, int k)
-{
+  
     if(index == 0) //0TH STAIRCASE
     //HIGHEST STAIRCASE SE CHALRE HAM 0 TAK AA RAHE FIR VAHA SE RETURN(VAPIS) JAA RAHE 
     //AND CALCULATE KARTE JAA RAHE

@@ -30,7 +30,7 @@ int minCharsforPalindrome(string str) //min number matlab larger length of palin
     int n = str.size();
     string str2 = str;
     reverse(str2.begin(), str2.end());
-	vector<vector<int>> dp(n + 1, vector<int>(n + 1, -1));
+    vector<vector<int>> dp(n + 1, vector<int>(n + 1, -1));
     
     int ans =  helper(str, str2, n - 1, n-1, dp);
     
